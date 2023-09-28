@@ -1,0 +1,21 @@
+
+---Downloaded files---
+The import files for: Company Elementor were successfully downloaded!
+Initial max execution time = 3600
+Files info:
+Site URL = https://jkinterior.local.com:444
+Data file = D:\xampp7\www\jkinterior.local.com/wp-content/uploads/2023/09/demo-content-import-file_2023-09-28__07-16-50.xml
+Widget file = D:\xampp7\www\jkinterior.local.com/wp-content/uploads/2023/09/demo-widgets-import-file_2023-09-28__07-16-50.json
+Customizer file = not defined!
+Redux files:
+pix_options -> D:\xampp7\www\jkinterior.local.com/wp-content/themes/essentials/inc/demo-content/sites/company/company-elementor-options.json 
+
+
+---Importing widgets---
+result : Sidebar does not exist in theme (moving widget to Inactive)
+
+
+
+
+---Importing Redux settings---
+Redux settings import for: pix_options finished successfully!
