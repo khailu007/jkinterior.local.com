@@ -100,7 +100,7 @@ if(!empty($_GET["post_intro"])){
 				<header class="entry-header">
 					<?php
 
-					if ( 'post' === get_post_type() ) :
+					if ( 'design_shop' === get_post_type() ) :
 
 						$author = get_the_author();
 						$avatar = get_avatar_url(get_the_author_meta('ID'), array('size'=>80));

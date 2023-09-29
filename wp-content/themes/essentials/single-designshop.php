@@ -12,7 +12,7 @@ get_header();
 $classes = '';
 $styles = '';
 
-if(get_post_type()=='desgin_shop'){
+if(get_post_type()=='design_shop'){
  if(!empty(pix_get_option('blog-bg-color'))){
  	if(pix_get_option('blog-bg-color')=='custom'){
  		$styles = 'background:'.pix_get_option('custom-blog-bg-color').';';
@@ -32,7 +32,7 @@ if(get_post_type()=='desgin_shop'){
 }
 
 $add_intro_placeholder = false;
-if(get_post_type()=='desgin_shop'){
+if(get_post_type()=='design_shop'){
     $post_intro = false;
     if(!empty(pix_get_option('post-with-intro'))&&pix_get_option('post-with-intro')){
         $post_intro = true;
@@ -63,7 +63,7 @@ if(!get_post_meta( get_the_ID(), 'pix-hide-top-padding', true )){
 }
 
 $containerClass = 'container';
-if(get_post_type()=='desgin_shop' && !empty(pix_get_option('blog-full-width-layout'))){
+if(get_post_type()=='design_shop' && !empty(pix_get_option('blog-full-width-layout'))){
 	$containerClass = 'container-fluid';
 }
 
@@ -100,7 +100,7 @@ if(get_post_type()=='desgin_shop' && !empty(pix_get_option('blog-full-width-layo
             }
 			while ( have_posts() ) :
 				the_post();
-                if(get_post_type()=='desgin_shop'){
+                if(get_post_type()=='design_shop'){
                     switch ($blog_layout) {
                         case 'left-sidebar':
                             get_template_part( 'template-parts/content', 'post-sidebar' );
@@ -112,7 +112,7 @@ if(get_post_type()=='desgin_shop' && !empty(pix_get_option('blog-full-width-layo
                             get_template_part( 'template-parts/content', 'post-normal' );
                             break;
                         default:
-                            get_template_part( 'template-parts/content', 'desgin_shop' );
+                            get_template_part( 'template-parts/content', 'design-shop' );
                     }
                 }elseif (get_post_type() == 'elementor_library') {
                     // Elementor template page
